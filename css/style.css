@@ -17,3 +17,6 @@ body {
 
 #team-members .member div.name {
   text-align: center; }
+
+body h1 {
+  color: red; }

@@ -22,3 +22,10 @@ body {
 #team-members .member div.name {
   text-align: center;  
 }
+
+$primaryColor: #FF0000;
+body {
+  h1 {
+    color: $primaryColor; 
+  }
+}
