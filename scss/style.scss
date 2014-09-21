@@ -1,31 +1,54 @@
+$primaryColor: #FF0000;
 body {
-  font-family: Verdana;
-  font-size: 1.5em;
+    font-family: Verdana;
+    font-size: 1.5em;
+
+    h1 {
+      color: $primaryColor; 
+    }
 }
 
 #team-members {
-  clear: both;
+      clear: both;
+
+      .member {
+        float: left;
+        /*border: 1px solid gray;*/
+        margin: 10px;
+        padding: 6px;
+      
+        img{
+          width: 200px;
+          height: 200px;
+          border-radius: 10px;
+          box-shadow: -5px 5px 5px #A4A4A4;
+          -webkit-transition: all .5s ease;
+               -moz-transition: all .5s ease;
+                 -o-transition: all .5s ease;
+                -ms-transition: all .5s ease;
+                    transition: all .5s ease;
+        }
+
+      
+        div.name {
+          text-align: center; 
+          } 
+      }
+
+      .member:nth-child(odd) {
+          img:hover {
+            transform: scale(1.1,1.1);
+            -webkit-filter:grayscale(50%);
+          }
+      }
+
+      .member:nth-child(even) {
+          img:hover {
+            transform: scale(0.9,0.9);
+            -webkit-filter:saturate(2);
+          }
+      }
 }
 
-#team-members .member {
-  float: left;
-  /*border: 1px solid gray;*/
-  margin: 10px;
-  padding: 6px;
-}
 
-#team-members .member img {
-  width: 200px;
-  height: 200px;
-}
 
-#team-members .member div.name {
-  text-align: center;  
-}
-
-$primaryColor: #FF0000;
-body {
-  h1 {
-    color: $primaryColor; 
-  }
-}
